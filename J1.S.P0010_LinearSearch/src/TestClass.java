@@ -23,7 +23,7 @@ public class TestClass {
     
     /**
      * public: access modify
-     * static: vùng nhớ động
+     * static: vùng tĩnh
      * int: kiểu trả về
      * test: tên method
      * @return 
