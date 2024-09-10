@@ -30,6 +30,7 @@ public class LinearSearch {
         // hiển thị array
         interaction.displayArray(arr);
         // Hiển thị kết quả 
+        // test thử này
         if (index == -1) {
             System.out.println("Not found!");
         } else {
