@@ -37,6 +37,7 @@ public class Validation {
             }
         }
     }
+    
     // nhấn shift + f6 để run main ở class Validation
     public static void main(String[] args) {
         Validation validation = new Validation();
