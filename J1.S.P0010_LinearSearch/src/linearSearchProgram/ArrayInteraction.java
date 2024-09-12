@@ -32,7 +32,6 @@ public class ArrayInteraction {
         for (int i = 0; i < arr.length; i++) {
             // in các số trong mảng
             System.out.print(arr[i]);
-            // 
                 if(i != arr.length - 1){
                     System.out.print(", ");
                 }
