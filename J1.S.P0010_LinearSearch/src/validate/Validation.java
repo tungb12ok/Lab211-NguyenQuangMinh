@@ -11,6 +11,7 @@ import java.util.Scanner;
  * @author Admin
  */
 public class Validation {
+
     // biến cục bộ
     public Scanner scanner = new Scanner(System.in);
 
@@ -28,22 +29,25 @@ public class Validation {
 
     public int checkPositiveNumber(String mess, String messError) {
         while (true) {
-            int input = Integer.parseInt(checkEmpty(mess, messError));
-
-            if (input > 0) {
-                return input;
-            }else{
-                System.out.println(messError);
+            try {
+                int input = Integer.parseInt(checkEmpty(mess, messError));
+                if (input > 0) {
+                    return input;
+                } else {
+                    System.out.println(messError);
+                }
+            } catch (Exception e) {
+                System.out.println("Must be integer!");
             }
         }
     }
-    
+
     // nhấn shift + f6 để run main ở class Validation
     public static void main(String[] args) {
         Validation validation = new Validation();
-        
+
         String a = validation.checkEmpty("Enter a:", "Not empty!");
-        
+
         System.out.println("a = " + a);
     }
 }
