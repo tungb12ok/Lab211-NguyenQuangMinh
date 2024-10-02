@@ -9,7 +9,7 @@ package model;
  * @author Admin
  */
 public class History extends Worker {
-
+    // true up, false down
     private boolean status;
     private String date;
 

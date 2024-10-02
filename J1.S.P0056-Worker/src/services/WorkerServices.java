@@ -7,7 +7,7 @@ package controller;
 import java.util.List;
 import model.History;
 import model.Worker;
-import validate.Validation;
+import view.Validation;
 
 /**
  *
@@ -15,7 +15,7 @@ import validate.Validation;
  */
 public class WorkerServices {
 
-    validate.Validation validation = new Validation();
+    Validation validation = new Validation();
     WorkerManagement workerManagement;
     HistoryManagement historyManagement;
 

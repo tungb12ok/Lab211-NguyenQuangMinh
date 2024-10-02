@@ -2,10 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package view;
+package controller;
 
 import controller.WorkerServices;
-import validate.Validation;
+import view.Validation;
+import view.MenuInterface;
+import view.Validation;
 
 /**
  *
@@ -16,14 +18,10 @@ public class Main {
     public static void main(String[] args) {
         WorkerServices workerServices = new WorkerServices();
         Validation validation = new Validation();
+        MenuInterface  menuInterface = new MenuInterface();
 
         while (true) {
-            System.out.println("1.Add Worker\n"
-                    + "2.Up salary\n"
-                    + "3.Down salary\n"
-                    + "4.Display Information salary\n"
-                    + "5.Exit");
-            int choice = validation.checkIntLimit("Enter choice: ", 1, 5);
+            int choice = menuInterface.showMenu();
 
             switch (choice) {
                 case 1:
