@@ -18,6 +18,12 @@ public class CalculatorManagement {
         // Input for Rectangle
         double width = validation.checkPositiveNumber("Please input side width of Rectangle: ", "Width must be a positive number!");
         double length = validation.checkPositiveNumber("Please input length of Rectangle: ", "Length must be a positive number!");
+        // Validate Rectangle Sides
+        while (length <= width) {
+            System.out.println("Invalid Input!");
+            width = validation.checkPositiveNumber("Please input side width of Rectangle: ", "Width must be a positive number!");
+            length = validation.checkPositiveNumber("Please input length of Rectangle: ", "Length must be a positive number!");
+        }
         Shape rectangle = new Rectangle(width, length);
 
         // Input for Circle

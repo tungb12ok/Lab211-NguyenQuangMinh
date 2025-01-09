@@ -12,10 +12,11 @@ public class J1SP0061_CalculatorShapeProgram {
 
     /**
      * @param args the command line arguments
+     * S? d?ng tính ch?t k? thùa Override: là m?t hàm ghi dè khi du?c tri?n khai o lop con
      */
     public static void main(String[] args) {
-        CalculatorManagement management = new CalculatorManagement();
-        management.run();
+        CalculatorManagement calculator = new CalculatorManagement();
+        calculator.run();
     }
 
 }
